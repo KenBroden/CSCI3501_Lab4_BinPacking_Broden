@@ -5,6 +5,7 @@ import java.util.List;
 public class BinPacker {
     private int binSize;
     private List<Integer> items;
+    private static final int MAX_BINS = 3;
 
     // Constructor
     public BinPacker(int binSize, List<Integer> items) {
@@ -34,10 +35,12 @@ public class BinPacker {
             }
 
             // If item did not fit in any bin, create a new bin
-            if (!placed) {
+            if (!placed && bins.size() < MAX_BINS) {
                 List<Integer> newBin = new ArrayList<>();
                 newBin.add(item);
                 bins.add(newBin);
+            } else if (!placed) {
+                System.out.println("Item " + item + " was not placed in any bin.");
             }
         }
         return bins;
