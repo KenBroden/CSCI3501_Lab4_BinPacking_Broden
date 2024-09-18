@@ -19,7 +19,7 @@ you can pack the bins as [12,8],[1,4,15], and [9,10], with the total unpacked am
 ### Solution Consideration
 
 To find the optimal solution, one needs to consider all possibilities of packing, which is **exponential** in *n*. However, there are good approximation algorithms that find a solution close to optimal in times **polynomial** in *n*.
-Your goal is to develop such an approximation algorithm, implement it, test it, and **analyze its efficiency** in the worst case. Prove the &Theta;/*(f(n))* approximation, where *f(n)* is in *O(n^k)* for a particular *k* (*n* is the number of items).
+Your goal is to develop such an approximation algorithm, implement it, test it, and **analyze its efficiency** in the worst case. Prove the &Theta;*(f(n))* approximation, where *f(n)* is in *O(n^k)* for a particular *k* (*n* is the number of items).
 
 ### Specific Requirements
 
