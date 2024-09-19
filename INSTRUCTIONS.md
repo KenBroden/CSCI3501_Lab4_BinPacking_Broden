@@ -3,6 +3,7 @@
 ## Overview
 
 This project implements a bin packing algorithm that attempts to pack a given set of items into a fixed number of bins with a specified capacity.
+*Lab 4 Bin Packing by Ken Broden*
 
 ## Files
 
@@ -26,7 +27,7 @@ This project implements a bin packing algorithm that attempts to pack a given se
 
 ```sh
    java Main
- ```
+```
 
 3. **Provide Input:**
    When prompted, enter the bin size, number of items, and the items themselves, separated by spaces. For example:
@@ -57,9 +58,11 @@ This project implements a bin packing algorithm that attempts to pack a given se
 
 **Output:**
 
+```sh
 Bin 1: [15, 4, 1]
 Bin 2: [12, 8]
 Bin 3: [10, 3]
+```
 
 ### Example 2
 
@@ -71,11 +74,13 @@ Bin 3: [10, 3]
 
 **Output:**
 
+```sh
 Item 8 was not placed in any bin.
 Item 3 was not placed in any bin.
 Bin 1: [18, 1]
 Bin 2: [15, 4]
 Bin 3: [10, 9]
+```
 
 ## Notes
 
