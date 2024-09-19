@@ -74,3 +74,35 @@
 
 **Justification**
 The maximal difference between my algorithm's solution and the optimal one is 5% of the total space. This is calculated based on the difference in the amount of used space between my solution and the optimal solution, relative to the total available space.
+
+## Algorithm Analysis
+
+**Mergesort:** The merge sort algorithm is used to sort the items in decreasing order. The time complexity of merge sort is \(O(n \log n)\), where \(n\) is the number of items.
+
+**Packing Items Into Bins:** The packing process involves iterating over each item and attempting to place it into one of the existing bins. The time complexity of this part depends on the number of items and the number of bins.
+
+1) Iterating over Items:
+   - There are \(n\) items to iterate over, so this part has a time complexity of \(O(n)\).
+
+2) Placing Items Into Bins:
+   - For each item, the algorithm checks each bin to see if the item can be placed in it. In the worst case, the algorithm checks all bins for each item.
+   - The maximum number of bins is a constant 3, so this part has a time complexity of \(O(1)\) for each item.
+   - Therefore, the total time complexity for placing items into bins is \(O(n)\).
+
+**Summing Bin Contents:** My algorithm uses bin.stream().mapToInt(Integer::intValue).sum() to calculate the sum of the contents of each bin. This operation is performed for each item and each bin.
+
+- The time complexity of summing the contents of a bin is \(O(k)\), where \(k\) is the number of items in the bin.
+- Since the maximum number of bins is constant, the total time complexity for summing bin contents is \(O(n)\).
+
+**Overall Time Complexity** Combining the time complexities of each part, we get the overall time complexity of the algorithm:
+
+- Merge sort: \(O(n \log n)\)
+- Packing items into bins: \(O(n)\)
+- Summing bin contents: \(O(n)\)
+
+The overall time complexity is dominated by the merge sort step, so the worst-case and average runtime of the algorithm is: \[ O(n \log n) \]
+
+### Runtime Summary
+
+- **Worst-case runtime:** \(O(n \log n)\)
+- **Average runtime:** \(O(n \log n)\)
