@@ -1,7 +1,8 @@
 # README overview
 
+- *Lab 4 Bin Packing by Ken Broden*
+
 This README is going to be the lab write up for my usage while programming the lab. It will be mostly information available from the lab instructions from canvas, along with my own notes that help me understand the goal. I plan on creating a separate INSTRUCTIONS.md file which details how to run the program, as well as a RESULTS.md to detail results and answer any questions asked in the lab write up.
-*Lab 4 Bin Packing by Ken Broden*
 
 ## Lab Overview
 

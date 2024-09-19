@@ -2,8 +2,9 @@
 
 ## Overview
 
+- *Lab 4 Bin Packing by Ken Broden*
+
 This project implements a bin packing algorithm that attempts to pack a given set of items into a fixed number of bins with a specified capacity.
-*Lab 4 Bin Packing by Ken Broden*
 
 ## Files
 
