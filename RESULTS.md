@@ -106,3 +106,10 @@ The overall time complexity is dominated by the merge sort step, so the worst-ca
 
 - **Worst-case runtime:** O(n*log(n))
 - **Average runtime:** O(n*log(n))
+
+If polynomial time is O(n^k), then my algorithm's efficiency of O(n*log(n)) is more efficient, as long as k>1.
+
+- **O(n^1):** Grows linearly with the input size.
+- **O(n*log(n)):** More efficient than quadratic and cubic time complexities, The log(n) factor grows very slowly compared to (n).
+- **O(n^2):** Grows quadratically, meaning the runtime increases significantly as the input size increases.
+- **O(n^3):** Grows cubically, meaning the runtime increases even more dramatically with the input size.
