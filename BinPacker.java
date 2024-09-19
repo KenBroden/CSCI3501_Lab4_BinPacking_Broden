@@ -22,6 +22,13 @@ public class BinPacker {
 
         // Iterate over items and place them in bins
         for (int item : items) {
+
+            // Skip items that are larger than the bin capacity
+            if (item > binSize) {
+                System.out.println("Item " + item + " exceeds bin capacity and was not placed in any bin.");
+                continue;
+            }
+            // Flag to indicate if item was placed in a bin
             boolean placed = false;
 
             // Try to place item in an existing bin
