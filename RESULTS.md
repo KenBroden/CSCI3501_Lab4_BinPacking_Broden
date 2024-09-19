@@ -82,12 +82,12 @@ The maximal difference between my algorithm's solution and the optimal one is 5%
 **Packing Items Into Bins:** The packing process involves iterating over each item and attempting to place it into one of the existing bins. The time complexity of this part depends on the number of items and the number of bins.
 
 1) Iterating over Items:
-   - There are \(n\) items to iterate over, so this part has a time complexity of \(O(n)\).
+   - There are \(n\) items to iterate over, so this part has a time complexity of O(n).
 
 2) Placing Items Into Bins:
    - For each item, the algorithm checks each bin to see if the item can be placed in it. In the worst case, the algorithm checks all bins for each item.
-   - The maximum number of bins is a constant 3, so this part has a time complexity of \(O(1)\) for each item.
-   - Therefore, the total time complexity for placing items into bins is \(O(n)\).
+   - The maximum number of bins is a constant 3, so this part has a time complexity of O(1) for each item.
+   - Therefore, the total time complexity for placing items into bins is O(n).
 
 **Summing Bin Contents:** My algorithm uses `bin.stream().mapToInt(Integer::intValue).sum()` to calculate the sum of the contents of each bin. This operation is performed for each item and each bin.
 
